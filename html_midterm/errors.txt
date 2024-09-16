@@ -15,9 +15,28 @@
 15. Need <p> and </p> on line 50
 16. Need <s> and </s> on line 50
 17. Need <p style="background-color:lightgray;" on line 52
-Need to close comment with --> on line 56
-Missing < on line 58, should be >Link<
-Need closing tag </a> on line 58
-Should use <u>, instead of <em> on line 60
-Incorrect closing order for tags on line 60
-Incorrect clsoing header tag on line 66
+18. Need to close comment with --> on line 56
+19. Missing < on line 58, should be >Link<
+20. Need closing tag </a> on line 58
+21. Should use <u>, instead of <em> on line 60
+22. Incorrect closing order for tags on line 60
+23. Incorrect clsoing header tag on line 66
+
+**is lang inside or outside <head>?**
+
+File 2
+26. Missing <html lang="en"> on line 2
+27. h1 should not be inside <head> tag on line 5  
+28. Missing <meta charset="UTF-8"> on line 5
+29. Missing </head> on line 6
+30. Missing > for body on line 7
+31. <html in wrong spot on line 8, should be on line 2
+32. Missing </strong on line 9
+33. Missing </p> on line 9
+34. Incorrect file name for img on line 11
+35. Incorrect format for img href on line 11
+36. Missing <h2> on line 13
+37. Missing <p> on line 15
+38. inccorect comment format on line 16
+39. Missing </body> on line 17
+40. Missing l in <html> on line 17
