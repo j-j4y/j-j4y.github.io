@@ -1,3 +1,5 @@
+Group Memebers: Aidan Youell, Jadynn Jones, Makayla Gale
+
 1. Missing <!DOCTYPE html> on line 1
 2. Misused "language" instead of <html lang="en"> on line 5
 3. <html lang="en"> should outside the head tag on line 5
