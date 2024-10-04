@@ -1,0 +1,34 @@
+.background-img {
+
+    background-image: url(/wa/img/steph_3.png);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+}
+
+.overlay-1 {
+    position: absolute;
+    height: 4em;
+    width: 20em;
+    background-color: rgb(237, 236, 247);
+    border: 2px solid rgb(105, 55, 151);
+    top: 85%;
+    left: 25%;
+    
+
+
+
+}
+
+
+.overlay-2 {
+    position: absolute;
+    height: 4em;
+    width: 20em;
+    background-color: black;
+    border: 2px solid goldenrod;
+    top: 85%;
+    left: 49.75%;
+
+
+}
