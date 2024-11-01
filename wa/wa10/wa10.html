@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+
+    <title>silly story generator</title>
+
+    <style>
+
+    body {
+      font-family: Cambria, serif;
+      width: 350px;
+      background-color: #d6dceb;
+    }
+
+    label {
+      font-weight: bold;  
+    }
+
+    div {
+      padding-bottom: 20px;      
+    }
+
+    input[type="text"] {
+      padding: 5px;
+      width: 150px;
+      border-color: #859cd4;display: flex;
+      justify-content: center;
+    }
+
+    /* story styling */
+    p {
+      background: #859cd4;
+      color: #000000;
+      padding: 10px;
+      visibility: hidden;
+      height: 100px;
+      width: 400px;
+    }
+
+    p:hover{
+        background: #b7c9f8;
+    }
+
+    /* button styling */
+
+    .randomize {
+        transition-duration: 0.4s;
+    }
+
+    .randomize {
+        border-radius: 3px;
+        background-color: #a9b7db;
+    }
+
+
+
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <label for="customname">Enter custom name:</label>
+      <input id="customname" type="text" placeholder="">
+    </div>
+    <div>
+      <label for="us">US</label><input id="us" type="radio" name="ukus" value="us" checked>
+      <label for="uk">UK</label><input id="uk" type="radio" name="ukus" value="uk">
+    </div>
+    <div>
+      <button class="randomize">Generate random story</button>
+    </div>
+
+    <p class="story"></p>
+    <img height="400px" width="500px"src="cat.gif" alt="a replaying silent video of a cat jumping up and down on two legs">
+
+    
+    <script src="wa10.js"></script>
+  </body>
+</html>
