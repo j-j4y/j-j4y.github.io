@@ -3,6 +3,10 @@ h1 {
   text-align: center;
 }
 
+p {
+  font-family: helvetica, sans-serif;
+}
+
 body {
   width: 640px;
   margin: 0 auto;
