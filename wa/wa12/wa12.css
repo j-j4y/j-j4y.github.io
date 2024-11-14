@@ -1,0 +1,23 @@
+body {
+    font-family: Playfair Display, serif;
+    text-align: center;
+    margin: 20px;
+    background-color: lightcoral;
+    font-weight: bold ;
+}
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+#getComicButton{
+    background-color: black;
+    border: none;
+    color: white;
+    padding: 15px 32px;
+    text-align: center;
+    display: inline-block;
+    font-size: 16px;
+
+}
+
