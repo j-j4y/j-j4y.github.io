@@ -1,0 +1,57 @@
+#container {
+    border: 1px solid black;
+    height: 50vh;
+    width: 50vw;
+    margin:auto;
+    margin-top: 15vh;
+    position: relative;
+    overflow: hidden;
+}
+
+/* player styling  */
+#duck {
+
+    background-color: blue;
+    height: 5vw;
+    width: 5vw;
+    position: absolute;
+    bottom: 0;
+    z-index: 1;
+}
+
+.jump { 
+    animation: jump 2s linear;
+}
+
+@keyframes jump {
+    0% {
+        top:150px
+    }
+    30% {
+        top:100px
+    }
+    70% {
+        top:100px
+    }
+    100% {
+        top:150px
+    }
+}
+
+/* obstacle styling */
+.obstacle  {
+
+    background-color: violet;
+    height: 5vw;
+    width: 3vw;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    animation: obstacle 1.45s linear infinite;
+}
+
+@keyframes obstacle {
+    0%{right:0%;}
+    100%{right:100%;}
+    
+}
