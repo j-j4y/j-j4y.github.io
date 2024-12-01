@@ -11,16 +11,18 @@
 /* player styling  */
 #duck {
 
-    background-color: blue;
+    /* background-color: blue; */
     height: 5vw;
     width: 5vw;
     position: absolute;
+    background-image: url(imgs/Duck.png);
+    background-size: 50px 50px;
     bottom: 0;
     z-index: 1;
 }
 
 .jump { 
-    animation: jump 2s linear;
+    animation: jump 1s linear;
 }
 
 @keyframes jump {
