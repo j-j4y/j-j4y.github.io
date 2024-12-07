@@ -36,11 +36,11 @@ setInterval(() => {
     }else if(obst.x <= duck.x) {
         score += 1;
         document.getElementById("score").innerHTML = `Score: ${score}` ;
-    }else if(score >= 8) {
-        document.getElementById("container").style.backgroundImage = "url(imgs/morning.jpg)"; //changes to daytime bg
+    }else if(score >= 6) {
+        document.getElementById("container").style.backgroundImage = "url(imgs/Summer6.png)"; //changes to level 2 bg
     }
     if(score >= 10) {
-        document.getElementById("container").style.backgroundImage = "url(imgs/night.jpg)"; //changes to mightt bg
+        document.getElementById("container").style.backgroundImage = "url(imgs/Summer8.png)"; //changes to level 3 bg
         // document.getElementById("container").style.backgroundColor = "pink";
         // console.log("changed color");
     }

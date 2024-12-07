@@ -6,7 +6,7 @@
     margin-top: 15vh;
     position: relative;
     overflow: hidden;
-    background-image: url(imgs/pixel-art-park-scene-with-two-people-walking-their-dogs-by-pond_36682-92289.jpg);
+    background-image: url(imgs/Summer5.png);
     /* background-color: "cyan"; */
     background-size:550px 450px;
 }
@@ -14,12 +14,12 @@
 /* player styling  */
 #duck {
 
-    background-color: blue;
-    height: 2vw;
-    width: 2vw;
+    /* background-color: blue; */
+    height: 4.5vw;
+    width: 4.5vw;
     position: absolute;
-    /* background-image: url(imgs/Duck.png); */
-    background-size: 90px 90px;
+    background-image: url(imgs/my\ FOX.png);
+    background-size: 55px 60px;
     bottom: 0;
     z-index: 1;
 }
@@ -46,12 +46,14 @@
 /* obstacle styling */
 .obstacle  {
 
-    background-color: violet;
+    /* background-color: violet; */
     height: 5vw;
     width: 3vw;
     position: absolute;
     bottom: 0;
     right: 0;
+    background-image: url(imgs/apple.png);
+    background-size: 40px 55px;
     animation: obstacle 1.45s linear infinite;
 }
 
@@ -64,8 +66,8 @@
 /* score styling */
 
 #score{
-
     position: absolute;
+    color: aliceblue;
     right: 0;
     margin: 5px;
 }
