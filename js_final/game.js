@@ -39,10 +39,10 @@ setInterval(() => {
     }else if(obst.x <= fox.x) {
         score += 1;
         document.getElementById("score").innerHTML = `Score: ${score}` ; //increment score and print it to the page
-    }else if(score >= 30) {
+    }else if(score >= 20) {
         document.getElementById("container").style.backgroundImage = "url(imgs/ice_bg.png)"; //changes to secret level bg
         document.getElementById("fox").style.backgroundImage = "url(imgs/penguin.png)"; //changes player at certain score
-    }else if(score >= 20) {
+    }else if(score >= 15) {
         document.getElementById("container").style.backgroundImage = "url(imgs/Summer8.png)"; //changes to level 3 bg
         // document.getElementById("container").style.backgroundColor = "pink";
         // console.log("changed color");
