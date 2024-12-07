@@ -12,18 +12,19 @@
 }
 
 /* player styling  */
-#duck {
+#fox {
 
     /* background-color: blue; */
-    height: 4.5vw;
-    width: 4.5vw;
+    height: 55px;
+    width: 55px;
     position: absolute;
     background-image: url(imgs/my\ FOX.png);
-    background-size: 55px 60px;
+    background-size: 62px 60px;
     bottom: 0;
     z-index: 1;
 }
 
+/* creating jump */
 .jump { 
     animation: jump .55s linear;
 }
@@ -47,13 +48,13 @@
 .obstacle  {
 
     /* background-color: violet; */
-    height: 5vw;
-    width: 3vw;
+    height: 40px;
+    width: 40px;
     position: absolute;
     bottom: 0;
     right: 0;
     background-image: url(imgs/apple.png);
-    background-size: 40px 55px;
+    background-size: 40px 45px;
     animation: obstacle 1.45s linear infinite;
 }
 
@@ -64,7 +65,6 @@
 }
 
 /* score styling */
-
 #score{
     position: absolute;
     color: aliceblue;

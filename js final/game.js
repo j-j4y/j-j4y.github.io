@@ -1,22 +1,24 @@
-const jumpDuck = document.getElementById("duck")
+const jumpFox = document.getElementById("fox")
 
-let duck = {};
-duck = document.getElementById("duck").getBoundingClientRect();
+let fox = {};
+fox = document.getElementById("fox").getBoundingClientRect();
 
 let obst = {};
 obst = document.querySelector(".obstacle").getBoundingClientRect();
 
 
+// allowing player to jump
 function jump() {
-    if (jumpDuck.classList != "jump") {
-        jumpDuck.classList.add("jump")
+    if (jumpFox.classList != "jump") {
+        jumpFox.classList.add("jump")
     }
 
     setTimeout(function () {
-        jumpDuck.classList.remove("jump");
+        jumpFox.classList.remove("jump");
     }, 300);
 }
 
+// jump using spacebar
 document.addEventListener("keydown", e=> {
     if(e.code == "Space"){
         jump();
@@ -24,27 +26,29 @@ document.addEventListener("keydown", e=> {
 
 let score = 0;
 
-// checks every 100ms to see if obstacle has been hit
+
 setInterval(() => {
     obst = document.querySelector(".obstacle").getBoundingClientRect();
-    duck = document.getElementById("duck").getBoundingClientRect();
-    if(duck.right >= obst.x && duck.bottom > obst.y) {
+    fox = document.getElementById("fox").getBoundingClientRect();
+    if(fox.right >= obst.x && fox.bottom > obst.y) { //if player touches sides or top of obstacle, end the game
         alert("you lost!");
         score = 0;
         document.getElementById("container").style.backgroundImage = "" ;
         document.querySelector("obstacle").style.animation ="none";
-    }else if(obst.x <= duck.x) {
+    }else if(obst.x <= fox.x) {
         score += 1;
-        document.getElementById("score").innerHTML = `Score: ${score}` ;
+        document.getElementById("score").innerHTML = `Score: ${score}` ; //increment score and print it to the page
     }else if(score >= 6) {
-        document.getElementById("container").style.backgroundImage = "url(imgs/Summer6.png)"; //changes to level 2 bg
-    }
-    if(score >= 10) {
+        document.getElementById("container").style.backgroundImage = "url(imgs/ice_bg.png)"; //changes to secret level bg
+        document.getElementById("fox").style.backgroundImage = "url(imgs/penguin.png)"; //changes player at certain score
+    }else if(score >= 4) {
         document.getElementById("container").style.backgroundImage = "url(imgs/Summer8.png)"; //changes to level 3 bg
         // document.getElementById("container").style.backgroundColor = "pink";
         // console.log("changed color");
+    }else if(score >= 2) {
+        document.getElementById("container").style.backgroundImage = "url(imgs/Summer6.png)";
+        
     }
-    
 
-},100) //unit is milliseconds
+},100) //checks to see if player has been hit (unit is milliseconds)
 
