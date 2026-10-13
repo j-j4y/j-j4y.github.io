@@ -1,3 +1,4 @@
+
 .coral-pixels-regular {
   font-family: "Coral Pixels", serif;
   font-weight: 400;
@@ -10,18 +11,56 @@
   font-style: normal;
 }
 
+.bbh-bartle-regular {
+  font-family: "BBH Bartle", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.image-row {
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-auto-flow: column;
+    gap: 50px;
+}
+
+.image-card {
+  text-align: center;
+}
+
+.image-card h2 {
+  margin: 8px 0 0;
+}
+
+.placeholder-img {
+    width: 300px;
+    height: 305px;
+    background: yellow;
+}
+    
 
 h1 {
-    font-family: "Coral Pixels";
-    font-size: 4rem;
+    font-family: "Michroma";
+    font-size: 6rem;
+    letter-spacing: 0.5em;
     position: absolute; /* taken out of the normal flow of the document */
-            top: 25%; /* moved down by 50% of the screen height */
-            transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
-            width: 100%; /* needs to be defined to keep the default block behavior */
-            text-align: center;
-            margin: 0; /* again, for perfect center */
+    top: 15%; /* moved down by x% of the screen height */
+    transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
+    width: 100%; /* needs to be defined to keep the default block behavior */
+    text-align: center;
+    margin: 0; /* again, for perfect center */
 }
 
 h2 {
-    font-family: "Michroma";
+    font-family: "BBH Bartle";
+    font-size: 2rem;
+    letter-spacing: 0.1em;
+    
+
 }
+
+
+
