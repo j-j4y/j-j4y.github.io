@@ -1,0 +1,27 @@
+.coral-pixels-regular {
+  font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.michroma-regular {
+  font-family: "Michroma", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+
+h1 {
+    font-family: "Coral Pixels";
+    font-size: 4rem;
+    position: absolute; /* taken out of the normal flow of the document */
+            top: 25%; /* moved down by 50% of the screen height */
+            transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
+            width: 100%; /* needs to be defined to keep the default block behavior */
+            text-align: center;
+            margin: 0; /* again, for perfect center */
+}
+
+h2 {
+    font-family: "Michroma";
+}
