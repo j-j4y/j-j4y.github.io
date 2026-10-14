@@ -1,0 +1,37 @@
+.dokdo-regular {
+  font-family: "Dokdo", system-ui;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/1200x/46/af/93/46af93720ecd620357c0b724a69baee2.jpg");
+}
+
+h1 {
+    font-family: "Dokdo";
+    font-size: 6rem;
+    letter-spacing: 0.5em;
+    position: absolute; /* taken out of the normal flow of the document */
+    top: 15%; /* moved down by x% of the screen height */
+    transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
+    width: 100%; /* needs to be defined to keep the default block behavior */
+    text-align: center;
+    margin: 0; /* again, for perfect center */
+}
+
+h3 {
+  position: absolute; /* taken out of the normal flow of the document */
+  font-size: 3rem;
+  top: 16%; /* moved down by x% of the screen height */
+  right: 29%;
+  transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
+  width: 100%; /* needs to be defined to keep the default block behavior */
+  text-align: center;
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: #15beb3;
+}

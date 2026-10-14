@@ -1,10 +1,12 @@
 
-
-
 .dokdo-regular {
   font-family: "Dokdo", system-ui;
   font-weight: 400;
   font-style: normal;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/1200x/46/af/93/46af93720ecd620357c0b724a69baee2.jpg");
 }
 
 .michroma-regular {
@@ -34,18 +36,18 @@
 }
 
 .image-card h2 {
-  margin: 2px 0 -15px;
+  margin: 15px 0 0px;
 }
 
 .image-card p {
-  margin: 0px 0 0;
+  margin: -20px 0 0;
   font-family: Michroma;
   font-size: 1rem;
 }
 
 .placeholder-img {
     width: 300px;
-    height: 305px;
+    height: 325px;
     background: yellow;
     border: 2px solid orchid;
     /* overflow: hidden; */
@@ -59,7 +61,7 @@
 
 a {
 text-decoration: none;
-color: #0066CC;
+color: #15beb3;
 padding: 10px;
 border-radius: 5px;
 }
@@ -67,6 +69,7 @@ border-radius: 5px;
 a:hover {
 text-decoration: underline;
 }
+
 h1 {
     font-family: "Dokdo";
     font-size: 6rem;
