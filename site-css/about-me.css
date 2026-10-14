@@ -1,0 +1,24 @@
+
+.PAGE2 h1 {
+    color: aquamarine;
+}
+.works-row {
+    position: absolute;
+    top: 30vh;
+    left: 50%;
+    transform: translateX(-50%);
+    display: grid;
+    grid-auto-flow: column;
+    gap: 30px;
+}
+
+.works-card {
+  text-align: center;
+}
+
+.placeholder-work {
+    width: 200px;
+    height: 105px;
+    background: rgb(0, 128, 255);
+    border: 2px solid rgb(207, 213, 75);
+}

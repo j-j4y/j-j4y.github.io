@@ -1,14 +1,5 @@
 
-/* .coral-pixels-regular {
-  font-family: "Coral Pixels", serif;
-  font-weight: 400;
-  font-style: normal;
-} */
-.love-light-regular {
-  font-family: "Love Light", cursive;
-  font-weight: 400;
-  font-style: normal;
-}
+
 
 .dokdo-regular {
   font-family: "Dokdo", system-ui;
@@ -43,7 +34,7 @@
 }
 
 .image-card h2 {
-  margin: 2px 0 0;
+  margin: 2px 0 -15px;
 }
 
 .image-card p {
@@ -57,9 +48,25 @@
     height: 305px;
     background: yellow;
     border: 2px solid orchid;
+    /* overflow: hidden; */
 }
-    
 
+/* .placeholder-img img {
+  width: 100%;
+  height: 100%;
+  object-fit: fill; /* Maintains aspect ratio by cropping if needed */
+/* }  */
+
+a {
+text-decoration: none;
+color: #0066CC;
+padding: 10px;
+border-radius: 5px;
+}
+
+a:hover {
+text-decoration: underline;
+}
 h1 {
     font-family: "Dokdo";
     font-size: 6rem;
@@ -76,8 +83,6 @@ h2 {
     font-family: "Dokdo";
     font-size: 5rem;
     letter-spacing: 0.1em;
-    
-
 }
 
 
