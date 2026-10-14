@@ -1,6 +1,17 @@
 
-.coral-pixels-regular {
+/* .coral-pixels-regular {
   font-family: "Coral Pixels", serif;
+  font-weight: 400;
+  font-style: normal;
+} */
+.love-light-regular {
+  font-family: "Love Light", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dokdo-regular {
+  font-family: "Dokdo", system-ui;
   font-weight: 400;
   font-style: normal;
 }
@@ -24,7 +35,7 @@
     transform: translateX(-50%);
     display: grid;
     grid-auto-flow: column;
-    gap: 50px;
+    gap: 30px;
 }
 
 .image-card {
@@ -32,22 +43,25 @@
 }
 
 .image-card h2 {
-  margin: 8px 0 0;
+  margin: 2px 0 0;
 }
 
 .image-card p {
-  margin: 8px 0 0;
+  margin: 0px 0 0;
+  font-family: Michroma;
+  font-size: 1rem;
 }
 
 .placeholder-img {
     width: 300px;
     height: 305px;
     background: yellow;
+    border: 2px solid orchid;
 }
     
 
 h1 {
-    font-family: "Michroma";
+    font-family: "Dokdo";
     font-size: 6rem;
     letter-spacing: 0.5em;
     position: absolute; /* taken out of the normal flow of the document */
@@ -59,8 +73,8 @@ h1 {
 }
 
 h2 {
-    font-family: "BBH Bartle";
-    font-size: 2rem;
+    font-family: "Dokdo";
+    font-size: 5rem;
     letter-spacing: 0.1em;
     
 
