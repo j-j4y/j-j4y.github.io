@@ -1,12 +1,9 @@
 
+
 .dokdo-regular {
   font-family: "Dokdo", system-ui;
   font-weight: 400;
   font-style: normal;
-}
-
-body {
-  background-image: url("https://i.pinimg.com/1200x/46/af/93/46af93720ecd620357c0b724a69baee2.jpg");
 }
 
 .michroma-regular {
@@ -19,6 +16,10 @@ body {
   font-family: "BBH Bartle", sans-serif;
   font-weight: 400;
   font-style: normal;
+}
+
+body {
+  background-image: url("https://i.pinimg.com/1200x/fd/12/16/fd1216283f7a8ef214ca1e4abbd73ddb.jpg");
 }
 
 .image-row {
