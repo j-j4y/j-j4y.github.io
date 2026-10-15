@@ -20,21 +20,38 @@ body {
     top: 27.5%;
     left: 50%;
     transform: translateX(-50%);
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    flex-direction: column; /* keep cards stacked vertically */
     gap: 30px;
     padding-bottom: 50px;
+
+    /* responsive width to prevent horizontal overflow */
+    width: min(900px, 92%);
+    justify-items: center;
+    box-sizing: border-box;
+    align-items: center;
 }
 
 .works-card {
-  text-align: center;
+    display: flex;
+    flex-direction: column; /* image and text side-by-side */
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    padding: 8px;
 }
 
 .placeholder-work {
-    width: 600px;
-    height: 400px;
+    width: 55%;
+    max-width: 620px;
+    aspect-ratio: 3 / 2; /* keep proportional */
     background: rgb(0, 128, 255);
     border: 2px solid rgb(240, 120, 0);
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 

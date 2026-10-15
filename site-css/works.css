@@ -12,40 +12,71 @@
 }
 
 body {
-  background-image: url("https://i.pinimg.com/1200x/46/af/93/46af93720ecd620357c0b724a69baee2.jpg");
+  background-image: url("https://i.pinimg.com/1200x/fd/12/16/fd1216283f7a8ef214ca1e4abbd73ddb.jpg");
 }
 
 .works-row {
     position: absolute;
     top: 27.5%;
-    left: 25%;
+    left: 50%;
     transform: translateX(-50%);
-    display: grid;
-    grid-auto-flow: row;
+    display: flex;
+    flex-direction: column; /* keep cards stacked vertically */
     gap: 30px;
     padding-bottom: 50px;
+
+    /* responsive width to prevent horizontal overflow */
+    width: min(900px, 92%);
+    justify-items: center;
+    box-sizing: border-box;
+    align-items: center;
 }
 
 .works-card {
-    text-align: center;
+    display: flex;
+    flex-direction: row; /* image and text side-by-side */
+    align-items: center;
+    gap: 20px;
+    text-align: left;
+    width: 100%;
+    max-width: 900px;
+    box-sizing: border-box;
+    padding: 8px;
+}
+
+.placeholder-work {
+    width: 55%;
+    max-width: 620px;
+    aspect-ratio: 3 / 2; /* keep proportional */
+    background: rgb(0, 128, 255);
+    border: 2px solid rgb(240, 120, 0);
+    box-sizing: border-box;
+    flex-shrink: 0;
 }
 
 .works-card p {
   font-family: "Michroma";
-  font-size: 1.25rem;
-  position: absolute; /* taken out of the normal flow of the document */
-  top: 15%; /* moved down by x% of the screen height */
-  left: 110%;
-  transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
-  width: 100%; /* needs to be defined to keep the default block behavior */
+  font-size: 1.15rem;
+  margin: 0;
+  width: 55%;
+  text-align: left;
+  box-sizing: border-box;
 }
 
-.placeholder-work {
-    width: 600px;
-    height: 400px;
-    background: rgb(0, 128, 255);
-    border: 2px solid rgb(240, 120, 0);
+/* responsive: stack image above text on small screens */
+@media (max-width: 800px) {
+  .works-card {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  .placeholder-work,
+  .works-card p {
+    width: 100%;
+  }
+  .works-row { top: 35vh; gap: 20px; }
 }
+  
 
 
 h1 {
@@ -61,10 +92,10 @@ h1 {
 }
 
 h3 {
-  position: absolute; /* taken out of the normal flow of the document */
+  position: relative; /* taken out of the normal flow of the document */
   font-size: 3rem;
-  top: 16%; /* moved down by x% of the screen height */
-  right: 29%;
+  top: 1px; /* moved down by x% of the screen height */
+  right: center;
   transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
   width: 100%; /* needs to be defined to keep the default block behavior */
   text-align: center;

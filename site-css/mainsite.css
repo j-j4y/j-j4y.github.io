@@ -22,37 +22,56 @@ body {
   background-image: url("https://i.pinimg.com/1200x/fd/12/16/fd1216283f7a8ef214ca1e4abbd73ddb.jpg");
 }
 
+/* ...existing code... */
+
 .image-row {
     position: absolute;
     top: 30vh;
     left: 50%;
     transform: translateX(-50%);
-    display: grid;
-    grid-auto-flow: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-wrap: wrap;
     gap: 30px;
+    width: 90%;
+    max-width: 1200px;
+    padding: 0 1rem;
 }
 
 .image-card {
-  text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: min(260px, 100%);
+    padding: 12px;
 }
 
 .image-card h2 {
-  margin: 15px 0 0px;
+  margin: 12px 0 0;
 }
 
 .image-card p {
   margin: -20px 0 0;
   font-family: Michroma;
   font-size: 1rem;
+  width: 100%;
+  max-width: 240px;
+  line-height: 1.35;
 }
 
+/* make placeholders responsive */
 .placeholder-img {
-    width: 300px;
-    height: 325px;
+    width: 100%;
+    max-width: 240px;
+    height: auto;
+    aspect-ratio: 4 / 5;
     background: yellow;
     border: 2px solid orchid;
-    /* overflow: hidden; */
+    object-fit: cover;
 }
+
 
 /* .placeholder-img img {
   width: 100%;
