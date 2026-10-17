@@ -37,7 +37,7 @@ body {
     flex-direction: row; /* image and text side-by-side */
     align-items: center;
     gap: 20px;
-    text-align: left;
+    text-align: center;
     width: 100%;
     max-width: 900px;
     box-sizing: border-box;
@@ -45,7 +45,7 @@ body {
 }
 
 .placeholder-work {
-    width: 55%;
+    width: 70%;
     max-width: 620px;
     aspect-ratio: 3 / 2; /* keep proportional */
     background: rgb(0, 128, 255);
@@ -59,7 +59,7 @@ body {
   font-size: 1.15rem;
   margin: 0;
   width: 55%;
-  text-align: left;
+  text-align: center;
   box-sizing: border-box;
 }
 
@@ -83,24 +83,27 @@ h1 {
     font-family: "Dokdo";
     font-size: 6rem;
     letter-spacing: 0.5em;
-    position: absolute; /* taken out of the normal flow of the document */
-    top: 15%; /* moved down by x% of the screen height */
-    transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
-    width: 100%; /* needs to be defined to keep the default block behavior */
+    position: static; /* keep in normal flow so following elements sit below */
+    transform: none;
+    width: 100%;
     text-align: center;
-    margin: 0; /* again, for perfect center */
+    margin: 2rem 0 0.5rem;
 }
 
 h3 {
-  position: relative; /* taken out of the normal flow of the document */
-  font-size: 3rem;
-  top: 1px; /* moved down by x% of the screen height */
-  right: center;
-  transform: translateY(-50%); /* moved back up (Y axis) by half of its height to achieve the perfect center */
-  width: 100%; /* needs to be defined to keep the default block behavior */
-  text-align: center;
-  margin: 0;
+    font-size: 3rem;
+    position: static;
+    transform: none;
+    width: 100%;
+    text-align: center;
+     margin: -20px 0 0 0;
 }
+
+/* responsive sizes */
+@media (max-width: 800px) {
+  h1 { font-size: 3.5rem; letter-spacing: 0.3em; margin-top: 1.5rem; }
+  h3 { font-size: 2rem; margin-bottom: 1rem; }
+} 
 
 a {
   text-decoration: none;
